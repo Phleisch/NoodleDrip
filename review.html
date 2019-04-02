@@ -1,125 +1,159 @@
+<!--
+TODO:
+Resizing text in the album info dev (such as for score and fore album name / artist name...)
+Make website compatible with different devices
+
+
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Album Review Layout</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body style="padding: 0px; margin: 0px; background-color: black; position: absolute;">
-        
-        <!-- Main page body -->
-		<div class="page" style="padding: 0px; margin: 0px;">
-            
-            <!-- Banner at the top of the page for navigation -->
-            <header style="background-color: black; position: fixed; width: 100%; z-index: 1; padding: 0px; margin: 0px; border-style: solid; border-width: 1px; border-color: white;">
-                <h1 class="fonttest" style="color: white; text-align: center; font-size: 40px; padding: 0px; margin: 10px;">soundspoon</h1>
-            </header>
-            <!--
-            <div class="navigator" style="width: 100%; background-color: black;">
-                <div style="float: left; width: 100%; ">
-                    <h1 style="color: white; text-align: center;">soundspoon</h1>
-                </div>
-                <br style="clear: both;">
-            </div>
-        -->
-            <!-- Front and center container for album details, review rating, 
-            and review details -->
-            <div class="" style="width: 100%; padding-top: 150px; margin: auto; display: table; text-align: center; padding-bottom: 50px;">
-                <div class="Album-Info" style="float: left; width: 33.33%;">
-                    <div style="vertical-align: middle;">
-                        <a style="font-size: 72px; color: white;">DAYTONA</a>
-                        <br>
-                        <a style="font-size: 48px; color: white;">Pusha T</a>
-                    </div>
-                </div>
-                
-                
-                <div class="Rating" style="float: left; position: relative; width: 33.33%; padding: 0px; margin: 0px;">
-                    <img src="daytona-album-art.jpg" alt="Daytona" 
-                    width="100%" style="filter: blur(6px);">
-                    <a style="padding: 0px; margin: 0px; position: absolute; top: 50%; transform: translate(0, -50%); left: 50%; margin-right: 50%; transform: translate(-50%, -50%); font-size: 200px; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">8.5</a>
-                </div>
-                
-                <!--
-                <div style="float: left; width: 33.33%; left: 33.33%">
-                    <h1>8.5 / 10.0</h1>
-                </div>
-            -->
-                <!--
-                <div class="Review-Info-Container" style="float: left; width: 33.33%;">
-                <div class="breaker" style="float: left; width: 33.33%; height: 100%:">
-                    <div style="display: flex; float: left; width: 2px; left: 50%; background-color: white; height: 90%;"></div>        
-                </div>
-                <div class="Review-Info" style="float: left; width: 66.66%;">
-                    <h3 style="color: white;">Jon Martin</h3>
-                    <h3 style="color: white;">March 26th, 2019</h3>
-                </div>
-                </div>-->
-                <div style="float: left; width: 20%; height: 100%;">
-                    <div style="width: 100%; height: 100%; border-left: thick solid white; margin-left: 50.00%">
-                            <a style="color: white; font-size: 16px;">Jon Martin</a><br>
-                            <a style="color: white; font-size: 16px;">March 26th, 2019</a>
-                    </div>
-                </div>
-                <br style="clear: both;">
-            </div>
-            
-            <!--Container for the actual review-->
-            <div class="review" style="width: 50%; margin: auto; padding-bottom: 100px;">
-                <h2 style="color: white; font-size: 40px;"><u>Overview</u></h2>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        Stellar album should have won the grammy for best rap album tbh, pusha t has a phenomenal delivery along with plenty of clever one liners that contain depth and dimension to them, surprises you with how many meanings can be conveyed in such a short series of bars, production on point across most of the album, fantastic use of samples but it is kanye so that is to almost be expected
-                        Reasons for not scoring higher: no overarching themes to the album wholistically other than drug dealing, no meaning behind the placement of tracks outside of infrared being last (kind of due to the album just being a collection of tracks and not a “story”), no focus on directing the listener to any form of realization across multiple tracks, “epiphany” moments are limited to a singular track basis                            
-                    </p>
-                    <br>
-                <h2 style="color: white; font-size: 40px;"><u>Song by Song</u></h2>
-                    <h4 style="color: white; font-size: 24px; color: green; margin-bottom: 10px;" title="Standout Track">If You Know You Know &#10004;</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        almost 4:44 sounding production, heavy on pitched vocals which is classic kanye, almost sounds like a classic jay z track which also reflects its calibur, and lyrically excellent, catchy hook, catchy track all around
-                    </p>
-                    <br>
-                    <h4 style="color: white; font-size: 24px; margin-bottom: 10px;">The Games We Play</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        slow but elaborate production, definitely not a track that pops but its solid, delivery is excellent on the slower beat
-                    </p>
-                    <br>
-                    <h4 style="color: white; font-size: 24px; color: red; margin-bottom: 10px;" title="Track to Avoid">Hard Piano (feat. <u style="text-decoration-color: #6a1f34;">Rick Ross</u>)</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        my pick for the worst track off the album, elaborate production but not great and largely uninspiring, chorus isn’t great compared to chorus from the rest of the album, rick ross verse, while delivered well is bland and uninspiring as well
-                    </p>
-                    <br>
-                    <h4 style="color: white; font-size: 24px; margin-bottom: 10px;">Come Back Baby</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        amazing sample, bassline is extremely simple but dope as fuck due to its frequency and placement on each lines delivery, fantastic delivery “wrists for wrists lets have a glow off brick for brick lets have a blow off” “white on white thats the testa black on black thats the tesla” “super soak homies”
-                    </p>
-                    <br>
-                    <h4 style="color: white; font-size: 24px; margin-bottom: 10px;">Santeria</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        simple looping beat but the combination of the bass and melody are stellar, probably the track with the most mature subject matter but even then it devolves into generic drug dealing gang shit by the end of it
-                    </p>
-                    <br>
-                    <h4 style="color: white; font-size: 24px; margin-bottom: 10px;">What Would Meek Do? (feat. Kanye West)</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        feature was weak, beats aight, lyrics are meh
-                    </p>
-                    <br>
-                    <h4 style="color: white; font-size: 24px; margin-bottom: 10px;">Infrared</h4>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        unoriginal diss track preying on largely common knowledge at that point
-                    </p>
-                    <br>
-                <h2 style="color: white; font-size: 40px;"><u>Summary</u></h2>
-                    <p style="color: white; font-size: 20px; margin: 0px;">
-                        Its bricks because bricks of cocaine if u listened to the album and didnt get that ur a dumbass
-                    </p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album Review Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main page body -->
+    <div class="page" style="padding: 0px; margin: 0px;">
+      <!-- Banner at the top of the page for navigation -->
+      <header>
+        <h1 class="header-title">
+          soundspoon
+        </h1>
+      </header>
 
-            </div>
-
-            <!--Might not include this, who knows.-->
-            <div class="footer">
-
-            </div>
+      <div
+        class=""
+        style="width: 100%; padding-top: 150px; margin: auto; display: table; text-align: center; padding-bottom: 50px;"
+      >
+        <div class="Album-Info" style="float: left; width: 33.33%;">
+          <div style="vertical-align: middle;">
+            <a style="font-size: 72px; color: white;">DAYTONA</a>
+            <br />
+            <a style="font-size: 48px; color: white;">Pusha T</a>
+          </div>
         </div>
-	</body>
+
+        <div
+          class="Rating"
+          style="float: left; position: relative; width: 33.33%; padding: 0px; margin: 0px;"
+        >
+          <img
+            src="daytona-album-art.jpg"
+            alt="Daytona"
+            width="100%"
+            style="filter: blur(6px);"
+          />
+          <a class="score">8.5</a>
+        </div>
+
+        <div style="float: left; width: 20%; height: 100%;">
+          <div
+            style="width: 100%; height: 100%; border-left: thick solid white; margin-left: 50.00%"
+          >
+            <a style="color: white; font-size: 16px;"
+              >Jon Martin<br />
+              March 26th, 2019</a
+            >
+          </div>
+        </div>
+        <br style="clear: both;" />
+      </div>
+
+      <!--Container for the actual review-->
+      <div class="review">
+        <h2><u>Overview</u></h2>
+        <p>
+          Stellar album should have won the grammy for best rap album tbh, pusha
+          t has a phenomenal delivery along with plenty of clever one liners
+          that contain depth and dimension to them, surprises you with how many
+          meanings can be conveyed in such a short series of bars, production on
+          point across most of the album, fantastic use of samples but it is
+          kanye so that is to almost be expected Reasons for not scoring higher:
+          no overarching themes to the album wholistically other than drug
+          dealing, no meaning behind the placement of tracks outside of infrared
+          being last (kind of due to the album just being a collection of tracks
+          and not a “story”), no focus on directing the listener to any form of
+          realization across multiple tracks, “epiphany” moments are limited to
+          a singular track basis
+        </p>
+        <br />
+        <h2><u>Song by Song</u></h2>
+        <h4 class="standout-track" title="Standout Track">
+          If You Know You Know
+        </h4>
+        <p>
+          almost 4:44 sounding production, heavy on pitched vocals which is
+          classic kanye, almost sounds like a classic jay z track which also
+          reflects its calibur, and lyrically excellent, catchy hook, catchy
+          track all around
+        </p>
+        <br />
+        <h4>
+          The Games We Play
+        </h4>
+        <p>
+          slow but elaborate production, definitely not a track that pops but
+          its solid, delivery is excellent on the slower beat
+        </p>
+        <br />
+        <h4 class="bad-track" title="Track to Avoid">
+          Hard Piano (feat. Rick Ross)
+        </h4>
+        <p>
+          my pick for the worst track off the album, elaborate production but
+          not great and largely uninspiring, chorus isn’t great compared to
+          chorus from the rest of the album, rick ross verse, while delivered
+          well is bland and uninspiring as well
+        </p>
+        <br />
+        <h4>
+          Come Back Baby
+        </h4>
+        <p>
+          amazing sample, bassline is extremely simple but dope as fuck due to
+          its frequency and placement on each lines delivery, fantastic delivery
+          “wrists for wrists lets have a glow off brick for brick lets have a
+          blow off” “white on white thats the testa black on black thats the
+          tesla” “super soak homies”
+        </p>
+        <br />
+        <h4>
+          Santeria
+        </h4>
+        <p>
+          simple looping beat but the combination of the bass and melody are
+          stellar, probably the track with the most mature subject matter but
+          even then it devolves into generic drug dealing gang shit by the end
+          of it
+        </p>
+        <br />
+        <h4>
+          What Would Meek Do? (feat. Kanye West)
+        </h4>
+        <p>
+          feature was weak, beats aight, lyrics are meh
+        </p>
+        <br />
+        <h4>
+          Infrared
+        </h4>
+        <p>
+          unoriginal diss track preying on largely common knowledge at that
+          point
+        </p>
+        <br />
+        <h2><u>Summary</u></h2>
+        <p>
+          Its bricks because bricks of cocaine if u listened to the album and
+          didnt get that ur a dumbass
+        </p>
+      </div>
+
+      <!--Might not include this, who knows.-->
+      <div class="footer"></div>
+    </div>
+  </body>
 </html>

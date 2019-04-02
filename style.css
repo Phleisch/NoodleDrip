@@ -1,10 +1,101 @@
 @font-face {
-    font-family: "Comfortaa";
-    src: url("Comfortaa.ttf");
+  font-family: "Comfortaa";
+  src: url("Comfortaa.ttf");
 }
 
-.fonttest {
-    font-family: 'Comfortaa';
-    font-weight:normal;
-    font-style:normal;
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  position: absolute;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+}
+
+h4 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  font-family: "Comfortaa";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 0px;
+  margin: 10px;
+}
+
+.score {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.review {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.standout-track {
+  color: green;
+}
+
+.bad-track {
+  color: red;
+}
+
+/* @media start */
+
+/* we don't need to specify for smartphones, that's our default layout */
+
+/* 10 inch tablets */
+@media only screen and (max-width: 1140px) {
+  /* Want to move author / date div below the album art and album info */
+}
+
+/* 7 inch tablets */
+@media only screen and (max-width: 768px) {
+  /* Each div is horizontally alone, does not share width with any other divs 
+    but there is consistent space of the left and right edges of each div*/
+}
+
+/* Smartphones */
+@media only screen and (max-width: 480px) {
+  /* Same as 7 inch tablets except that the space on the left and right edges 
+    of each div are reduce drastically - very minimal margins and padding*/
 }
