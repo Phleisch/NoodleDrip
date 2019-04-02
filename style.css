@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("Comfortaa.ttf");
+}
+
+.fonttest {
+    font-family: 'Comfortaa';
+    font-weight:normal;
+    font-style:normal;
+}
