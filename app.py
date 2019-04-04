@@ -1,8 +1,6 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, url_for
 import sys
 import json
-from user_dao import User, user_is_unique
-from base import Base, engine, Session
 
 app = Flask(__name__)
 
@@ -38,6 +36,21 @@ def handle_error(error):
 @app.route('/', methods=["GET"])
 def get_home():
     return render_template('index.html')
+
+@app.route('/daytona', methods=["GET"])
+def get_daytona():
+    with open('daytona.json', 'r') as jsonfile:
+        data = jsonfile.read()
+    jdata = json.loads(data)
+    return render_template('review2.html', data=jdata)
+
+@app.route('/trivial', methods=["GET"])
+def get_trivial():
+    with open('trivial.json', 'r') as jsonfile:
+        data = jsonfile.read()
+
+    jdata = json.loads(data)
+    return render_template('trivial.html', data=jdata)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)

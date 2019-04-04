@@ -1,14 +1,14 @@
 {
         "album": {
                 "title": "DAYTONA",
-                "artist-name": "Pusha T",
+                "artist": "Pusha T",
                 "score": "8.5",
-                "album-art": "daytona.jpg"
-                
+                "albumArt": "daytona.jpg"
+
         },
         "review": {
                 "author": "Jon Martin",
-                "date-created": "March 26th, 2019",
+                "date": "March 26th, 2019",
                 "overview": "Stellar album should have won the grammy for best rap album tbh, pusha t has a phenomenal delivery along with plenty of clever one liners that contain depth and dimension to them, surprises you with how many meanings can be conveyed in such a short series of bars, production on point across most of the album, fantastic use of samples but it is kanye so that is to almost be expected Reasons for not scoring higher: no overarching themes to the album wholistically other than drug dealing, no meaning behind the placement of tracks outside of infrared being last (kind of due to the album just being a collection of tracks and not a “story”), no focus on directing the listener to any form of realization across multiple tracks, “epiphany” moments are limited to a singular track basis",
                 "songs": {
                         "song1": {

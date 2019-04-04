@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Album Review Layout</title>
-    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />-->
   </head>
   <body>
     <!-- Main page body -->
@@ -19,26 +19,26 @@
       <div class="album">
         <div class="album-info">
           <div class="album-info-text">
-            <a class="album-title">{{ data.album.title }}</a>
+                  <!--<a class="album-title">{{ data.album.title }}</a>-->
             <br />
-            <a class="artist-name">{{ data.album.artist-name }}</a>
+            <!--<a class="artist-name">{{ data.album.artist-name }}</a>-->
           </div>
         </div>
 
         <div class="rating">
-          <img
-            src="daytona-album-art.jpg"
+         <!-- <img
+          src="{{ url_for('static', filename='img/daytona.jpg') }}"
             alt="Daytona"
             width="100%"
             style="filter: blur(6px);"
-          />
-          <a class="score">{{ data.album.score }}</a>
+          />-->
+         <!--<a class="score">{{ data.album.score }}</a>-->
         </div>
 
         <div class="review-info">
           <div class="test-class">
-            <a class="review-info-text">{{ data.review.author }}<br />
-              {{ data.review.data-created }}</a>
+            <!--<a class="review-info-text">{{ data.review.author }}<br />
+              {{ data.review.data-created }}</a>-->
           </div>
         </div>
         <br style="clear: both;" />
@@ -47,13 +47,13 @@
       <!--Container for the actual review-->
       <div class="review">
         <h2><u>Overview</u></h2>
-        <p>
+       <!-- <p>
           {{ data.review.overview }}
-        </p>
+        </p>-->
         <br />
         <h2><u>Song by Song</u></h2>
 
-        {% for song in data.songs %}
+        <!--{% for song in data.songs %}
         <h4 class="standout-track" title="Standout Track">
             {{ song.name }}
         </h4>
@@ -61,8 +61,8 @@
             {{ song.desc }}
         </p>
         <br />
-        {% endfor %}
-        
+        {% endfor %}-->
+
         <h2><u>Summary</u></h2>
         <p>
           {{ data.review.summary }}
