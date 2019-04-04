@@ -13,7 +13,8 @@
                 "songs": {
                         "song1": {
                                 "name": "If You Know You Know",
-                                "desc": "almost 4:44 sounding production, heavy on pitched vocals which is classic kanye, almost sounds like a classic jay z track which also reflects its calibur, and lyrically excellent, catchy hook, catchy track all around"
+                                "desc": "almost 4:44 sounding production, heavy on pitched vocals which is classic kanye, almost sounds like a classic jay z track which also reflects its calibur, and lyrically excellent, catchy hook, catchy track all around",
+                                "extra": "standout"
                         },
                         "song2": {
                                 "name": "The Games We Play",
@@ -21,7 +22,8 @@
                         },
                         "song3": {
                                 "name": "Hard Piano (feat. Rick Ross)",
-                                "desc": "my pick for the worst track off the album, elaborate production but not great and largely uninspiring, chorus isn’t great compared to chorus from the rest of the album, rick ross verse, while delivered well is bland and uninspiring as well"
+                                "desc": "my pick for the worst track off the album, elaborate production but not great and largely uninspiring, chorus isn’t great compared to chorus from the rest of the album, rick ross verse, while delivered well is bland and uninspiring as well",
+                                "extra": "avoid"
                         },
                         "song4": {
                                 "name": "Come Back Baby",

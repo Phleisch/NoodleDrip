@@ -13,6 +13,7 @@ Make website compatible with different devices
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Album Review Layout</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   </head>
   <body>
     <!-- Main page body -->
@@ -58,8 +59,8 @@ Make website compatible with different devices
 
         <h2><u>Song by Song</u></h2>
         {% for song in data.review.songs %}
-            <h4>{{ song }}</h4>
-            <p>{{ song }}</p>
+        <h4 class="">{{ data.review.songs[song].name }}</h4>
+            <p>{{ data.review.songs[song].desc }}</p>
             <br />
         {% endfor %}
 
