@@ -42,7 +42,7 @@ def get_daytona():
     with open('daytona.json', 'r') as jsonfile:
         data = jsonfile.read()
     jdata = json.loads(data)
-    return render_template('review2.html', data=jdata)
+    return render_template('template.html', data=jdata)
 
 @app.route('/trivial', methods=["GET"])
 def get_trivial():
