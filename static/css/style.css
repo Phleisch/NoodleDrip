@@ -12,7 +12,7 @@ header {
   z-index: 1;
   padding: 0px;
   margin: 0px;
-  outline: 1px solid white;
+  outline: 2px solid white;
 }
 
 p {
@@ -38,7 +38,7 @@ h4 {
 }
 
 .header-title {
-  font-family: 'Comfortaa'
+  font-family: 'Comfortaa';
   font-weight: normal;
   font-style: normal;
   color: white;
