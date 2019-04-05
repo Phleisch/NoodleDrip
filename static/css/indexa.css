@@ -17,7 +17,7 @@ header {
   z-index: 1;
   padding: 0px;
   margin: 0px;
-  border-bottom: 2px solid gold;
+  border-bottom: 2px solid white;
 }
 
 h1 {
@@ -55,7 +55,7 @@ h1 {
 
 /* 10 inch tablets */
 @media only screen and (max-width: 1140px) {
-    
+
   /* 2 reviews per row */
 }
 

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, url_for
+from collections import OrderedDict
 import sys
 import json
 
@@ -41,7 +42,7 @@ def get_home():
 def get_daytona():
     with open('reviews/daytona.json', 'r') as jsonfile:
         data = jsonfile.read()
-    jdata = json.loads(data)
+    jdata = json.loads(data, object_pairs_hook=OrderedDict)
     return render_template('template.html', data=jdata)
 
 if __name__ == '__main__':
