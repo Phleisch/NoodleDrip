@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Comfortaa'
+    src: url('../fonts/comfortaa/regular.ttf');
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -12,7 +17,7 @@ header {
   z-index: 1;
   padding: 0px;
   margin: 0px;
-  outline: 2px solid white;
+  border-bottom: 2px solid gold;
 }
 
 p {
