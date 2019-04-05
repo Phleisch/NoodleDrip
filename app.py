@@ -39,18 +39,10 @@ def get_home():
 
 @app.route('/daytona', methods=["GET"])
 def get_daytona():
-    with open('daytona.json', 'r') as jsonfile:
+    with open('reviews/daytona.json', 'r') as jsonfile:
         data = jsonfile.read()
     jdata = json.loads(data)
     return render_template('template.html', data=jdata)
-
-@app.route('/trivial', methods=["GET"])
-def get_trivial():
-    with open('trivial.json', 'r') as jsonfile:
-        data = jsonfile.read()
-
-    jdata = json.loads(data)
-    return render_template('trivial.html', data=jdata)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
