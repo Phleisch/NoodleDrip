@@ -61,7 +61,7 @@ Make website compatible with different devices
 
         <h2><u>Track by Track</u></h2>
         {% for song in data.review.songs %}
-        <h4 class="">{{ data.review.songs[song].name }}</h4>
+        <h4 class=""><a style="color: white; text-decoration: none;" href="{{ data.review.songs[song].lyrics }}">{{ data.review.songs[song].name }}</a></h4>
             <p>{{ data.review.songs[song].desc }}</p>
             <br />
         {% endfor %}
