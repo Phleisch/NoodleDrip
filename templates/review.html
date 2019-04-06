@@ -11,7 +11,7 @@ Make website compatible with different devices
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Album Review Layout</title>
+    <title>{{ data.album.title }} Review</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/e.css') }}" />
     <script src="{{ url_for('static', filename='js/scriptg.js') }}"></script>
   </head>
@@ -61,12 +61,12 @@ Make website compatible with different devices
 
         <h2><u>Track by Track</u></h2>
         {% for song in data.review.songs %}
-        <h4 class=""><a style="color: white; text-decoration: none;" href="{{ data.review.songs[song].lyrics }}">{{ data.review.songs[song].name }}</a></h4>
+        <h4 class=""><a class="lyric-link" href="{{ data.review.songs[song].lyrics }}">{{ data.review.songs[song].name }}</a></h4>
             <p>{{ data.review.songs[song].desc }}</p>
             <br />
         {% endfor %}
 
-        <h2><u>Summary</u></h2>
+        <h2><u>Wrapping Up</u></h2>
         <p>{{ data.review.summary }}</p>
       </div>
 
