@@ -3,7 +3,13 @@
     src: url('../fonts/comfortaa/regular.ttf');
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/rubik/regular.ttf');
+}
+
 body {
+  font-family: 'Rubik';
   padding: 0px;
   margin: 0px;
   background-color: black;
