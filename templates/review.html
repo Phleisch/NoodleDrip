@@ -34,6 +34,9 @@ Make website compatible with different devices
             <a class="album-title">{{ data.album.title }}</a>
             <br />
             <a class="artist-name">{{ data.album.artist }}</a>
+            <p>{% for n in range(data.album.score | int) %}
+            &#x{{ data.album.emojiCode }};
+            {% endfor %}</p>
           </div>
         </div>
 
