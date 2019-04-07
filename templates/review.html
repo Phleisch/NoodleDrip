@@ -58,13 +58,27 @@ Make website compatible with different devices
 
       <!--Container for the actual review-->
       <div class="review">
+
+        <p style="display: inline-block;"><b>Standout Tracks</b>: </p>
+        {% for song in data.review.songs if data.review.songs[song].extra == 'standout' %}
+        <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %}, {% endif %}</p>
+        {% endfor %}
+
+        <p style="display: inline-block;"><b>Tracks to Avoid</b>: </p>
+        {% for song in data.review.songs if data.review.songs[song].extra == 'avoid' %}
+        <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %}, {% endif %}</p>
+        {% endfor %}
+
         <h2><u>Overview</u></h2>
         <p>{{ data.review.overview }}</p>
         <br />
 
         <h2><u>Track by Track</u></h2>
         {% for song in data.review.songs %}
-        <h4 class=""><a class="lyric-link" href="{{ data.review.songs[song].lyrics }}">{{ data.review.songs[song].name }}</a></h4>
+        <h4>
+            <a class="lyric-link" href="{{ data.review.songs[song].lyrics }}">
+                    {{ data.review.songs[song].name }}</a>
+        </h4>
             <p>{{ data.review.songs[song].desc }}</p>
             <br />
         {% endfor %}
