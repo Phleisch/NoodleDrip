@@ -40,14 +40,15 @@ h1 {
 }
 
 .header-title {
-    font-family: 'Comfortaa';
-    font-weight: normal;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    padding: 0px;
-    margin: 10px;
+  position: absolute;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Comfortaa';
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 40px;
 }
 
 .page {
