@@ -48,6 +48,14 @@ h4 {
         margin: 0px;
 }
 
+.home-button {
+        position: absolute; 
+        color: white; 
+        top: 50%;
+        transform: translate(0, -50%); 
+        left: 5%;
+}
+
 .header-title {
         font-family: 'Comfortaa';
         font-weight: normal;
