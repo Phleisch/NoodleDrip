@@ -63,8 +63,9 @@ Make website compatible with different devices
         {% for song in data.review.songs if data.review.songs[song].extra == 'standout' %}
         <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %}, {% endif %}</p>
         {% endfor %}
+        <br/>
 
-        <p style="display: inline-block;"><b>Tracks to Avoid</b>: </p>
+        <p style="display: inline-block; padding-top: 10px;"><b>Tracks to Avoid</b>: </p>
         {% for song in data.review.songs if data.review.songs[song].extra == 'avoid' %}
         <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %}, {% endif %}</p>
         {% endfor %}
