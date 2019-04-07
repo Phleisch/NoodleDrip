@@ -19,6 +19,7 @@ body {
 header {
   background-color: black;
   position: fixed;
+  height: 60px;
   width: 100%;
   z-index: 1;
   padding: 0px;
@@ -32,10 +33,10 @@ h1 {
 }
 
 .home-button {
-  position: absolute; 
-  color: white; 
+  position: absolute;
+  color: white;
   top: 50%;
-  transform: translate(0, -50%); 
+  transform: translate(0, -50%);
   left: 5%;
 }
 
