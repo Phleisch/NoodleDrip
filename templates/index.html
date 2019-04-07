@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>soundspoon</title>
-    <link rel="icon" href="../static/img/spoon.ico">
-    <link rel="stylesheet" href="../static/css/indexb.css" />
-    <script src="../static/js/scripth.js"></script>
+    <link rel="icon" href="{{ url_for('static', filename='img/spoon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/indexc.css') }}">
+    <script src="{{ url_for('static', filename='js/scripth.js') }}"></script>
   </head>
   <body onload="setColor()">
     <!-- Main page body -->
@@ -14,6 +15,7 @@
       <!-- Banner at the top of the page for navigation -->
       <a href="/">
       <header>
+        <i class="fas fa-home fa-lg home-button"></i>
         <h1 class="header-title">
           soundspoon
         </h1>

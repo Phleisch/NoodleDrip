@@ -13,7 +13,8 @@ Make website compatible with different devices
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ data.album.title }} Review</title>
     <link rel="icon" href="{{ url_for('static', filename='img/spoon.ico') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/f.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/h.css') }}">
     <script src="{{ url_for('static', filename='js/scripth.js') }}"></script>
   </head>
   <body onload="setColor()">
@@ -22,6 +23,7 @@ Make website compatible with different devices
       <!-- Banner at the top of the page for navigation -->
       <a href="/">
       <header>
+        <i class="fas fa-home fa-lg home-button"></i>
         <h1 class="header-title">soundspoon</h1>
       </header>
       </a>

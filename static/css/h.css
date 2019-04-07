@@ -49,14 +49,20 @@ h4 {
 }
 
 .home-button {
-        position: absolute; 
-        color: white; 
+        position: absolute;
+        color: white;
         top: 50%;
-        transform: translate(0, -50%); 
+        transform: translate(0, -50%);
         left: 5%;
 }
 
 .header-title {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 50%;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
         font-family: 'Comfortaa';
         font-weight: normal;
         font-style: normal;
@@ -65,6 +71,7 @@ h4 {
         font-size: 40px;
         padding: 0px;
         margin: 10px;
+
 }
 
 .album {
