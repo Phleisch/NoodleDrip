@@ -76,8 +76,8 @@ Make website compatible with different devices
         <h2><u>Track by Track</u></h2>
         {% for song in data.review.songs %}
         <h4>
-            <a class="lyric-link" href="{{ data.review.songs[song].lyrics }}">
-                    {{ data.review.songs[song].name }}</a>
+            <a class="lyric-link" href="{{ data.review.songs[song].lyrics }}" target="_blank">
+                    {{ data.review.songs[song].name }} <i class="fas fa-external-link-alt" style="color: white"></i></a>
         </h4>
             <p>{{ data.review.songs[song].desc }}</p>
             <br />
