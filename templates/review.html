@@ -14,7 +14,7 @@ Make website compatible with different devices
     <title>{{ data.album.title }} Review</title>
     <link rel="icon" href="{{ url_for('static', filename='img/spoon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/i.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/j.css') }}">
     <script src="{{ url_for('static', filename='js/scripth.js') }}"></script>
   </head>
   <body onload="setColor()">
@@ -75,10 +75,10 @@ Make website compatible with different devices
 
         <h2><u>Track by Track</u></h2>
         {% for song in data.review.songs %}
-        <h4>
-            <a class="lyric-link" href="{{ data.review.songs[song].lyrics }}" target="_blank">
-                    {{ data.review.songs[song].name }} <i class="fas fa-external-link-alt" style="color: white"></i></a>
-        </h4>
+        <a class="lyric-link" href="{{ data.review.songs[song].lyrics }}" target="_blank">
+                <h4 class="{% if data.review.songs[song].extra == 'standout' %}standout-track{% elif data.review.songs[song].extra == 'avoid' %}bad-track{% endif %}">
+                    {{ data.review.songs[song].name }} <i class="fas fa-external-link-alt" style="color: white"></i>
+        </h4></a>
             <p>{{ data.review.songs[song].desc }}</p>
             <br />
         {% endfor %}
