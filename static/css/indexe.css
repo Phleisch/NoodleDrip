@@ -57,11 +57,17 @@ h1 {
     margin: 0px;
 }
 
+.reviews {
+  padding-top: 150px;
+}
+
 .review {
-  margin-left: 5%;
-  margin-right: 5%;
-    float: left;
-  width: 33.33%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  float: left;
+  width: 23.33%;
   margin: auto;
 }
 
