@@ -14,7 +14,7 @@ Make website compatible with different devices
     <title>{{ data.album.title }} Review</title>
     <link rel="icon" href="{{ url_for('static', filename='img/spoon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/k.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/l.css') }}">
     <script src="{{ url_for('static', filename='js/scripth.js') }}"></script>
   </head>
   <body onload="setColor()">
@@ -30,16 +30,20 @@ Make website compatible with different devices
 
       <div class="album">
         <div class="album-info">
-          <div class="album-info-text">
+          <div class="album-info-text" style="width: 100%;">
             <a class="album-title">{{ data.album.title }}</a>
             <br />
             <a class="artist-name">{{ data.album.artist }}</a>
-            <p>{% for n in range(data.album.score | int) %}
-            &#x{{ data.album.emojiCode }};
-            {% endfor %}</p>
-          </div>
+
+          <div class="emojis" style="width: 100%; padding-top: 10px;" title="{{ data.album.score }} {{ data.album.emojiName }}">
+            {% for n in range(data.album.score | int) %}
+            <p style="display: inline-block; padding-left: 5px; font-size: 36px;">&#x{{ data.album.emojiCode }};</p>{% endfor %}
+            {% if '.5' in data.album.score %}
+            <p style="display: inline-block; padding-left: 5px; font-size: 18px;">&#x{{ data.album.emojiCode }};</p>{% endif %}
+        </div>
         </div>
 
+  </div>
         <div class="rating">
           <img
             src="{{ url_for('static', filename='img/daytona.jpg') }}"
