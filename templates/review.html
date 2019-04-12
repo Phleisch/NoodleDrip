@@ -1,11 +1,3 @@
-<!--
-TODO:
-Resizing text in the album info dev (such as for score and fore album name / artist name...)
-Make website compatible with different devices
-
-
--->
-
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -66,16 +58,24 @@ Make website compatible with different devices
       <!--Container for the actual review-->
       <div class="review">
 
-        <p style="display: inline-block;"><b>Standout Tracks</b>: </p>
-        {% for song in data.review.songs if data.review.songs[song].extra == 'standout' %}
-        <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %}, {% endif %}</p>
-        {% endfor %}
+        <p style="display: inline-block; padding-right: 5px;"><b>Standout Tracks</b>:
+        {% if data.review.standout is defined %}
+            {{data.review.standout}}</p>
+        {% else %}
+            {% for song in data.review.songs if data.review.songs[song].extra == 'standout' %}
+                <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %},{% endif %}</p>
+            {% endfor %}
+        {% endif %}
         <br/>
 
-        <p style="display: inline-block; padding-top: 10px;"><b>Tracks to Avoid</b>: </p>
-        {% for song in data.review.songs if data.review.songs[song].extra == 'avoid' %}
-        <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %}, {% endif %}</p>
-        {% endfor %}
+        <p style="display: inline-block; padding-top: 10px; padding-right: 5px;"><b>Tracks to Avoid</b>:
+        {% if data.review.avoid is defined %}
+            {{data.review.avoid}}</p>
+        {% else %}
+            {% for song in data.review.songs if data.review.songs[song].extra == 'avoid' %}
+                <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %},{% endif %}</p>
+            {% endfor %}
+        {% endif %}
 
         <h2><u>Overview</u></h2>
         <p>{{ data.review.overview }}</p>

@@ -51,7 +51,7 @@ def get_home():
             temp_data = jsonfile.read()
 
         temp_json = json.loads(temp_data, object_pairs_hook=OrderedDict)
-        data[key_name]['href'] = review
+        data[key_name]['href'] = review[:-5]
         data[key_name]['albumArt'] = str(temp_json['album']['albumArt'])
         data[key_name]['albumName'] = str(temp_json['album']['title'])
 
