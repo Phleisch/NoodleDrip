@@ -24,15 +24,15 @@
 
       <!--Section for showing reviews-->
       <div class="reviews">
-        {% for review in data.reviews %}
-        <a href="{{ data.reviews[review].href }}">
+        {% for review in data %}
+        <a href="{{ data[review].href }}">
             <div class="review">
                 <img
-                src="{{ data.reviews[review].albumArt }}"
-                alt="{{ data.reviews[review].albumName }}"
+                src="../static/img/{{ data[review].albumArt }}"
+                alt="{{ data[review].albumName }}"
                 width="100%"
                 />
-                <h1>{{ data.reviews[review].albumName }}</h1>
+                <h1>{{ data[review].albumName }}</h1>
             </div>
         </a>
         {% endfor %}

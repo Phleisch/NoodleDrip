@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify, url_for
 from collections import OrderedDict
+import os
 import re
 import sys
 import json
@@ -37,7 +38,28 @@ def handle_error(error):
 # Home page
 @app.route('/', methods=["GET"])
 def get_home():
-    return render_template('index.html')
+    reviews = os.listdir('reviews/')
+    data = {}
+    counter = 1
+
+    for review in reviews:
+        file_path = 'reviews/' + review
+        key_name = 'review' + str(counter)
+        data[key_name] = {}
+
+        with open(file_path, 'r') as jsonfile:
+            temp_data = jsonfile.read()
+
+        temp_json = json.loads(temp_data, object_pairs_hook=OrderedDict)
+        data[key_name]['href'] = review
+        data[key_name]['albumArt'] = str(temp_json['album']['albumArt'])
+        data[key_name]['albumName'] = str(temp_json['album']['title'])
+
+        counter += 1
+
+    jdata = json.dumps(data)
+    jjdata = json.loads(jdata, object_pairs_hook=OrderedDict)
+    return render_template('index.html', data=jjdata)
 
 @app.route('/<string:review_name>', methods=["GET"])
 def get_review(review_name):
