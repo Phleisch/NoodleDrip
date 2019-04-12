@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify, url_for
 from collections import OrderedDict
+import re
 import sys
 import json
 
@@ -38,19 +39,17 @@ def handle_error(error):
 def get_home():
     return render_template('index.html')
 
-@app.route('/daytona', methods=["GET"])
-def get_daytona():
-    with open('reviews/daytona.json', 'r') as jsonfile:
-        data = jsonfile.read()
+@app.route('/<string:review_name>', methods=["GET"])
+def get_review(review_name):
+    review = re.sub('[^A-Za-z0-9\-]', '', review_name)
+    file_path = 'reviews/' + review + '.json'
 
-    # object_pairs_hook is for keeping track list in order since json has no order
-    jdata = json.loads(data, object_pairs_hook=OrderedDict)
-    return render_template('review.html', data=jdata)
+    try:
+        with open(file_path, 'r') as jsonfile:
+            data = jsonfile.read()
 
-@app.route('/arizona-baby', methods=["GET"])
-def get_arizona():
-    with open('reviews/arizona-baby.json', 'r') as jsonfile:
-        data = jsonfile.read()
+    except IOError as ex:
+        return default_error() # Should replace with 404 page
 
     # object_pairs_hook is for keeping track list in order since json has no order
     jdata = json.loads(data, object_pairs_hook=OrderedDict)
