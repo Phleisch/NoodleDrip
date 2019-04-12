@@ -42,7 +42,16 @@ def get_home():
 def get_daytona():
     with open('reviews/daytona.json', 'r') as jsonfile:
         data = jsonfile.read()
-    
+
+    # object_pairs_hook is for keeping track list in order since json has no order
+    jdata = json.loads(data, object_pairs_hook=OrderedDict)
+    return render_template('review.html', data=jdata)
+
+@app.route('/arizona-baby', methods=["GET"])
+def get_daytona():
+    with open('reviews/arizona-baby.json', 'r') as jsonfile:
+        data = jsonfile.read()
+
     # object_pairs_hook is for keeping track list in order since json has no order
     jdata = json.loads(data, object_pairs_hook=OrderedDict)
     return render_template('review.html', data=jdata)
