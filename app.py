@@ -48,7 +48,7 @@ def get_daytona():
     return render_template('review.html', data=jdata)
 
 @app.route('/arizona-baby', methods=["GET"])
-def get_daytona():
+def get_arizona():
     with open('reviews/arizona-baby.json', 'r') as jsonfile:
         data = jsonfile.read()
 
