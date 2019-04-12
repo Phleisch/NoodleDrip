@@ -71,7 +71,7 @@ def get_review(review_name):
             data = jsonfile.read()
 
     except IOError as ex:
-        return default_error() # Should replace with 404 page
+        return render_template('404.html')
 
     # object_pairs_hook is for keeping track list in order since json has no order
     jdata = json.loads(data, object_pairs_hook=OrderedDict)
