@@ -24,16 +24,29 @@
 
       <!--Section for showing reviews-->
       <div class="reviews">
-	<a href="daytona">
+        {% for review in data %}
+        <a href="{{ data[review].href }}">
             <div class="review">
                 <img
-                src="../static/img/daytona.jpg"
-                alt="Daytona"
+                src="../static/img/{{ data[review].albumArt }}"
+                alt="{{ data[review].albumName }}"
                 width="100%"
                 />
-                <h1>DAYTONA</h1>
+                <h1>{{ data[review].albumName }}</h1>
             </div>
         </a>
+        {% endfor %}
+        <!--
+        <a href="arizona-baby">
+            <div class="review">
+                <img
+                src="../static/img/arizona-baby.jpg"
+                alt="ARIZONA baby"
+                width="100%"
+                />
+                <h1>ARIZONA baby</h1>
+            </div>
+        </a>-->
       </div>
 
       <!--Might not include this, who knows.-->
