@@ -1,100 +1,38 @@
-@font-face {
-    font-family: 'Comfortaa';
-    src: url('../fonts/comfortaa/regular.ttf');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/rubik/regular.ttf');
-}
-
-body {
-  font-family: 'Rubik';
-  padding: 0px;
-  margin: 0px;
-  background-color: black;
-  position: absolute;
-  width: 100%;
-}
-
-header {
-  background-color: black;
-  position: fixed;
-  height: 60px;
-  width: 100%;
-  z-index: 1;
-  padding: 0px;
-  margin: 0px;
-  border-bottom: 2px solid white;
-}
-
 h1 {
     color: white;
     text-align: center;
 }
 
-.home-button {
-  position: absolute;
-  color: white;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 5%;
-}
-
-.header-title {
-  position: absolute;
-  left: 50%;
-  margin-right: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Comfortaa';
-  font-weight: normal;
-  font-style: normal;
-  color: white;
-  font-size: 40px;
-}
-
-.page {
-    padding: 0px;
-    margin: 0px;
-}
-
 .reviews {
-  padding-top: 120px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+    padding-top: 120px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .review {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  float: left;
-  width: 28.33%;
-  margin: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    float: left;
+    width: 28.33%;
+    margin: auto;
 }
 
 /* @media start */
 
-/* we don't need to specify for smartphones, that's our default layout */
-
 /* 10 inch tablets */
 @media only screen and (max-width: 1140px) {
-  .review {
-    width: 45%;
-  }
-  /* 2 reviews per row */
+    /* 2 reviews per row */
+  
+    .review {
+        width: 45%;
+    }
 }
 
 /* 7 inch tablets */
 @media only screen and (max-width: 768px) {
-
-  .review {
-    width: 95%;
-  }
-  /* 1 review per row */
-}
-
-/* Smartphones */
-@media only screen and (max-width: 480px) {
-
-  /* No change for now */
+    /* 1 review per row */
+    
+    .review {
+        width: 95%;
+    }
 }
