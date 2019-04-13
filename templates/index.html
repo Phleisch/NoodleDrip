@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/shared-style.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/indexi.css') }}">
-    <script src="{{ url_for('static', filename='js/scripth.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripti.js') }}"></script>
   </head>
   <body onload="setColor()">
     <!-- Main page body -->
@@ -37,21 +37,18 @@
             </div>
         </a>
         {% endfor %}
-        <!--
-        <a href="arizona-baby">
-            <div class="review">
-                <img
-                src="../static/img/arizona-baby.jpg"
-                alt="ARIZONA baby"
-                width="100%"
-                />
-                <h1>ARIZONA baby</h1>
-            </div>
-        </a>-->
       </div>
 
-      <!--Might not include this, who knows.-->
-      <div class="footer"></div>
+      <footer>
+        <div class="social-icons">
+            <a href="https://www.reddit.com/user/soundspoonofficial" target="_blank">
+                <i class="fab fa-reddit-alien fa-lg social-icon"></i>
+            </a>
+            <a href="https://twitter.com/soundspoonoff" target="_blank">
+                <i class="fab fa-twitter fa-lg social-icon"></i>
+            </a>
+        </div>
+    </footer>
     </div>
   </body>
 </html>
