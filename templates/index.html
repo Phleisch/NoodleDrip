@@ -27,7 +27,7 @@
       <div class="reviews">
         {% for review in data %}
         <a href="{{ data[review].href }}">
-            <div class="review">
+            <div class="review" {% if loop.last %} style="padding-bottom: 60px;" {% endif %}>
                 <img
                 src="../static/img/{{ data[review].albumArt }}"
                 alt="{{ data[review].albumName }}"
