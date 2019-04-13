@@ -3,5 +3,7 @@ var colors = ["#FFFF00", "#E6FB04", "#FF0000", "#FD1C03", "#FF3300", "#FF6600", 
 function setColor() {
     var randNum = Math.floor(Math.random() * 22);
     var header = document.getElementsByTagName("header");
+    var footer = document.getElementsByTagName("footer");
     header[0].style.borderBottomColor = colors[randNum];
+    footer[0].style.borderTopColor = colors[randNum];
 }
