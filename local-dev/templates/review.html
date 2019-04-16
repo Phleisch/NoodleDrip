@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ data.album.title }} Review</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/spoon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shared-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/p.css') }}">
+    <script src="{{ url_for('static', filename='js/scripti.js') }}"></script>
+  </head>
+  <body onload="setColor()">
+    <!-- Main page body -->
+    <div class="page">
+      <!-- Banner at the top of the page for navigation -->
+      <a href="/">
+      <header>
+        <i class="fas fa-home fa-lg home-button"></i>
+        <h1 class="header-title">soundspoon</h1>
+      </header>
+      </a>
+
+      <div class="album">
+        <div class="album-info">
+          <div class="album-info-text" style="width: 100%;">
+            <a class="album-title">{{ data.album.title }}</a>
+            <br />
+            <a class="artist-name">{{ data.album.artist }}</a>
+
+          <div class="emojis" style="width: 100%; padding-top: 10px;" title="{{ data.album.score }} {{ data.album.emojiName }}">
+            {% for n in range(data.album.score | int) %}
+              <img width="12%" hspace="10" src="../static/img/ios-emojis/{{ data.album.emojiCode }}.png"/>
+            {% endfor %}
+            {% if '.5' in data.album.score %}
+              <img width="6%" src="../static/img/ios-emojis/{{ data.album.emojiCode }}.png"/>
+            {% endif %}
+        </div>
+        </div>
+
+  </div>
+        <div class="rating">
+          <img
+          src="../static/img/{{ data.album.albumArt }}"
+            alt="Daytona"
+            width="100%"
+            style="filter: blur(6px);"
+          />
+          <a class="score">{{ data.album.score }}</a>
+        </div>
+
+        <div class="review-info">
+          <div class="test-class">
+                  <a class="review-info-text">{{ data.review.author }}<br />
+                  {{ data.review.date }}</a>
+          </div>
+        </div>
+        <br style="clear: both;" />
+      </div>
+
+      <!--Container for the actual review-->
+      <div class="review">
+
+        <p style="display: inline-block; padding-right: 5px;"><b>Standout Tracks</b>:
+        {% if data.review.standout is defined %}
+            {{data.review.standout}}</p>
+        {% else %}
+            {% for song in data.review.songs if data.review.songs[song].extra == 'standout' %}
+                <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %},{% endif %}</p>
+            {% endfor %}
+        {% endif %}
+        <br/>
+
+        <p style="display: inline-block; padding-top: 10px; padding-right: 5px;"><b>Tracks to Avoid</b>:
+        {% if data.review.avoid is defined %}
+            {{data.review.avoid}}</p>
+        {% else %}
+            {% for song in data.review.songs if data.review.songs[song].extra == 'avoid' %}
+                <p style="display: inline-block;">{{data.review.songs[song].name}}{% if loop.last != true %},{% endif %}</p>
+            {% endfor %}
+        {% endif %}
+
+        <h2><u>Overview</u></h2>
+        <p>{{ data.review.overview }}</p>
+        <br />
+
+        <h2><u>Track by Track</u></h2>
+        {% for song in data.review.songs %}
+        <a class="lyric-link" href="{{ data.review.songs[song].lyrics }}" target="_blank">
+                <h4 class="{% if data.review.songs[song].extra == 'standout' %}standout-track{% elif data.review.songs[song].extra == 'avoid' %}bad-track{% endif %}">
+                    {{ data.review.songs[song].name }} <i class="fas fa-external-link-alt" style="color: white"></i>
+        </h4></a>
+            <p>{{ data.review.songs[song].desc }}</p>
+            <br />
+        {% endfor %}
+
+        <h2><u>Wrapping Up</u></h2>
+        <p>{{ data.review.summary }}</p>
+      </div>
+
+      <footer>
+        <div class="social-icons">
+            <a href="https://www.reddit.com/user/soundspoonofficial" target="_blank">
+                <i class="fab fa-reddit-alien fa-lg social-icon"></i>
+            </a>
+            <a href="https://twitter.com/soundspoonoff" target="_blank">
+                <i class="fab fa-twitter fa-lg social-icon"></i>
+            </a>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>

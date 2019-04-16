@@ -38,10 +38,10 @@ def handle_error(error):
 # Home page
 @app.route('/', methods=["GET"])
 def get_home():
+    print("Debug")
     reviews = os.listdir('reviews/')
     data = {}
     counter = 1
-
     for review in reviews:
         file_path = 'reviews/' + review
         key_name = 'review' + str(counter)
@@ -78,4 +78,4 @@ def get_review(review_name):
     return render_template('review.html', data=jdata)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='127.0.0.1', port=5000)

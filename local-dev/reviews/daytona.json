@@ -1,0 +1,58 @@
+{
+        "album": {
+                "title": "DAYTONA",
+                "artist": "Pusha-T",
+                "emojiCode": "1f9f1",
+                "emojiName": "Bricks",
+                "score": "8.5",
+                "albumArt": "daytona.jpg"
+
+        },
+        "review": {
+                "author": "Jon Martin",
+                "date": "March 26th, 2019",
+                "overview": "DAYTONA, the first of five seven-track albums produced by Kanye West and released in the Summer of 2018, is the third studio album by Pusha-T and the first of his to garner serious critical success. Originally known as King Push, DAYTONA has received high praise with Pitchfork calling it an “instant classic” and was even nominated at the 2018 Grammy awards for Best Rap Album. Despite a decent amount of the hip-hop community writ large assuming that DAYTONA was a lock for the award, it ultimately lost to Cardi B’s Invasion of Privacy, which was a robbery akin to Kendrick Lamar’s To Pimp a Butterfly losing to Taylor Swift’s 1989 for Album of the Year in 2015 except not quite of the same magnitude. Still, DAYTONA is easily Pusha-T’s most impressive body of work to date with his incredible delivery, clever one-liners with considerable depth, and fantastic and creative use of samples. With Kanye West at the helm of production that last point is to be expected, however, despite what the album does well, it still has its shortcomings. There doesn’t seem to be any overarching themes tackled by this project other than drug dealing, which for a Pusha-T project is to be expected, but branching outside of the norm would definitely separate this project from the rest of his discography. There also doesn’t seem to be much thought behind the order of the tracklisting outside of “Infrared” being the outro track due to its focus as a diss track. This lack of foresight indicates that this album just sounds like a collection of tracks as opposed to containing any overarching stories. Finally, it doesn’t seem like the album tries to direct the listener to any form of realization or message across multiple tracks, with any understanding potentially gained being limited to an individual track by track basis. Even with these weaknesses, this album does plenty of things exceptionally well and would have been well-deserving of the Grammy for Best Rap Album.",
+                "songs": {
+                        "song1": {
+                                "name": "If You Know You Know",
+                                "lyrics": "https://genius.com/Pusha-t-if-you-know-you-know-lyrics",
+                                "desc": "The first thing that immediately jumps out as a listener is how the production builds on this track. It starts off muted with the occasional pitched vocals chiming in, but explodes in complexity, which is incredibly fitting as an introductory track and indicative of West’s skill as a producer. The break is catchy and the chorus maintains multiple sports analogies to drug dealing with extensive and intelligent use of double entendres. Easily one of the best, if not, the best track on the album.",
+                                "extra": "standout"
+                        },
+                        "song2": {
+                                "name": "The Games We Play",
+                                "lyrics": "https://genius.com/Pusha-t-the-games-we-play-lyrics",
+                                "desc": "While the production on the introductory track was fast and upbeat, the production on this track marks an immediate shift away from that. However, it remains as elaborate as ever in its use of different sounds, albeit with a much more creeping tempo. Lyrically, it’s a slow, unravelling of braggadocio and influence, with a heavier focus on delivery and less so on creativity in its refrain. A solid track all around but somewhat filler in comparison to some of the more standout tracks of the project."
+                        },
+                        "song3": {
+                                "name": "Hard Piano (feat. Rick Ross)",
+                                "lyrics": "https://genius.com/Pusha-t-hard-piano-lyrics",
+                                "desc": "This track is a stark contrast to the first two, with lackluster production in comparison that sounds largely uninspiring and not quite as elaborate. It features a heavier focus on the melody in highlighting the piano in its namesake, but aside from that, the chorus doesn’t sound nearly as good or as fitting as the first two tracks. The reason to listen to this track is Pusha-T’s first verse as Rick Ross’ verse is just generic filler as well unfortunately.",
+                                "extra": "avoid"
+                        },
+                        "song4": {
+                                "name": "Come Back Baby",
+                                "lyrics": "https://genius.com/Pusha-t-come-back-baby-lyrics",
+                                "desc": "What an amazing sample. This is a perfect example of how a sample is utilized properly. Despite lacking in complexity in its production, the bass is phenomenal on this track as well and ultimately serves to highlight both the lyricism and the sample. There are multiple fantastic lines here with both “N*gga, wrists for wrists-let’s have a glow off / F*ck it, brick for brick-let’s have a blow off” and White on white, that’s the Testa / Black on black, that’s the Tesla” making their appearance on this track with excellent delivery. A must listen to for those considering adding any of these tracks into their rotation.",
+                                "extra": "standout"
+                        },
+                        "song5": {
+                                "name": "Santeria",
+                                "lyrics": "https://genius.com/Pusha-t-santeria-lyrics",
+                                "desc": "As this track starts, a listener can immediately pick up on the high pitched yet infectious melody playing in almost isolation in the background supported by a similar bass line to “Come Back Baby” and just a lone snare. Lyrically, this track contains some of the deepest subject matter approached on the album by discussing the death of Pusha-T’s friend and road manager De’Von “DayDay” Pickett and its effects on Pusha-T. Despite the shift in maturity of topic, Pusha-T does not fail to weave in plenty of references to drug dealing with lines like “Searchin' for the green like a Gremlin, presidential emblem / Presidential tint on this shit that I am driven in.” It is rather disappointing that with a beat shift, Pusha-T devolves back to the subjects he knows best of drug dealing and gang violence as opposed to continuing down alternative subject matter, but that just wouldn’t be Pusha-T’s style.",
+                                "extra": "standout"
+                        },
+                        "song6": {
+                                "name": "What Would Meek Do? (feat. Kanye West)",
+                                "lyrics": "https://genius.com/Pusha-t-what-would-meek-do-lyrics",
+                                "desc": "With production not quite as good as some of the highlights of the album, a lackluster verse by Kanye West, and a chorus not quite as catchy as some of the other track’s chorus, this track doesn’t have a lot going for it comparatively. Kanye West’s verse is somewhat nonsensical and erratic in its train of thought and like “Hard Piano” the reason to listen to this track is for Pusha-T’s verse at the beginning. Aside from the name recognition and status of a feature by Kanye West this track is largely filler."
+                        },
+                        "song7": {
+                                "name": "Infrared",
+                                "lyrics": "https://genius.com/Pusha-t-infrared-lyrics",
+                                "desc": "The Drake/Pusha-T feud dates back to 2011 where Pusha-T called Drake out for abusing ghost writers and reference tracks. In 2018, Pusha-T continues to poke and prod at Drake for those same reasons, despite Drake’s use of ghost writers being largely common knowledge at this point, making this track feel unoriginal, repetitive, and uninspiring. The droning of “Infrared, yeah, you know what I mean?” in the background gets in the way of Pusha-T’s verses and delivery at some points and is flat-out annoying by a couple of listens. In contrast, “The Story of Adidon,” an independent Drake diss track released by Pusha-T revealing that Drake has a child and setting the internet ablaze while rapping over Jay-Z’s beat, “The Story of O.J.” was a much better diss track but unfortunately does not fit this project as well, either sonically or lyrically, as “Infrared.”"
+                        }
+                },
+                "summary": "Despite a handful of weaker tracks, this album has some pretty phenomenal highs and sounds very polished. It is comforting that the weaker tracks on the project are actually the features because some artists have a tendency to get drowned out when a more popular artist makes an appearance on their project. Finally, for anyone that has listened to the album, it should be pretty clear why “bricks” were chosen as this project’s arbitrary rating metric. For those who do not understand the connection, Pusha-T utilizes bricks as a reference to bricks of cocaine and drug dealing more than previously thought possible in a sub-thirty minute seven-track album. Even a single listen to the first track would make the connection relatively clear off the chorus alone and this motif continues throughout basically the entire duration of the album."
+        }
+}

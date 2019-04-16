@@ -1,0 +1,30 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.reviews {
+  padding-top: 120px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/* @media start */
+
+/* 10 inch tablets */
+@media only screen and (max-width: 1140px) {
+    /* 2 reviews per row */
+
+    .review {
+        width: 45%;
+    }
+}
+
+/* 7 inch tablets */
+@media only screen and (max-width: 768px) {
+    /* 1 review per row */
+
+    .review {
+        width: 95%;
+    }
+}

@@ -1,0 +1,27 @@
+{
+        "album": {
+                "title": "",
+                "artist": "",
+                "emojiCode": "",
+                "emojiName": "",
+                "score": "",
+                "albumArt": ""
+
+        },
+        "review": {
+                "author": "",
+                "date": "",
+                "standout": "",
+                "avoid": "",
+                "overview": "",
+                "songs": {
+                        "song": {
+                                "name": "",
+                                "lyrics": "",
+                                "desc": "",
+                                "extra": ""
+                        }
+                },
+                "summary": ""
+        }
+}
