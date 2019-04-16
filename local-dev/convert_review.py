@@ -4,17 +4,34 @@ import json
 import argparse
 
 def text_to_json(remove, file_path):
+    data = {}
+    album = {}
+    review = {}
+    songs = {}
+
+    counter = 1
 
     try:
-        data = {}
 
         with open(file_path, 'r', encoding='utf8') as text_data:
             text_data = text_data.readlines()
         
         for line in text_data:
-            if len(line.strip()) == 0:
+            line = line.strip()
+            if len(line) == 0:
                 continue
-            print(line.strip())
+            
+            if counter >= 1 and counter <= 5:
+                parts = line.split(': ')
+                var_name = parts[0]
+                value = parts[1]
+                album[var_name] = value
+
+            counter += 1
+
+        review['songs'] = songs
+        data['album'] = album
+        data['review'] = review
 
         print(data)
 
